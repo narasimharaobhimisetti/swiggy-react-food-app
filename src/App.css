@@ -1,0 +1,301 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+.navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 20px;
+    padding:0 40px;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09);;
+    position:fixed;
+    top:0;
+    left:0;
+    width:85%;
+    min-width: 85%;
+    z-index:2;
+    background-color: white;
+}
+.nav-title h2{
+    color:orangered;
+}
+.nav-title a{
+    text-decoration: none;
+}
+.item-section{
+    display:flex;
+    width:95%;
+    justify-content: space-between;
+    margin:145px 25px  30px 25px ;
+}
+.item-image{
+    width:200px;
+   
+}
+.item-image img{
+    width:100%;
+}
+.chain-section{
+    display: flex;
+    border:1px solid red;
+    overflow-x: hidden;
+    position: relative;
+}
+.btn-section{
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+    gap:10px;
+    margin-bottom:10px;
+   
+}
+.btn-section button{
+    padding:4px 35px;
+}
+.vendor-box{
+   
+    height: 220px;
+}
+.vendor-box img{
+    width:350px;
+    height: 200px;
+    flex:0 0 auto;
+    gap:10px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.landing-section{
+    margin:5px 40px;
+    border-radius: 10px;
+}
+.firm-section{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap:10px;
+ height:auto;
+ margin-bottom:50px;
+ border-top:2px solid black;
+}
+.firm-section a {
+    color:rgba(19, 1, 10, 0.625);
+    text-decoration: none;
+}
+
+.firm-image img{
+    width:100%;
+    height:180px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex:0 0 auto;
+   
+}
+.activeBut{
+  background-color: darkblue;
+  color:white;
+}
+.firm-details{
+    margin-top:-10px;
+}
+.firm-details ul li{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+#firm-firmName{
+    font-weight: 900;
+}
+.firm-offer{
+    
+    position: relative;
+   top:-40px;
+    font-weight: 900;
+    color:white;
+    background-color:transparent;
+    margin:0 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 1px  black,-1px -2px  black,-2px -2px black;
+    
+   
+}
+.filter-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:5px;
+}
+.product-total{
+    margin-top:45px;
+    margin:10px 100px;
+    background-color: rgba(209, 221, 217, 0.262);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.377);
+}
+.product-section{
+    display: flex;
+    justify-content: space-between;
+    margin:5px 20px;
+    padding:0 100px;
+    border-top:2px solid black;
+   
+    align-items: center;
+}
+.product-section ul li {
+    list-style-type: none;
+}
+.product-image{
+    text-align: center;
+    position:relative;
+}
+.product-image  img{
+    width:150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.product-image button{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    left:10px;
+    text-align: center;
+    
+ padding:2px 20px;
+ border-radius: 10px;    
+ cursor: pointer;
+}
+.loading{
+    text-align: center;
+}
+
+ @media (max-width:576px){
+    .navbar-section{
+       
+        padding:0 10px;
+        width:90vw;
+    }
+    .item-section{
+        
+        margin-top:100px;
+    }
+    .landing-section{
+        padding:0 10px;
+        margin-top:15px;
+    }
+    h2{
+        font-size: 15px;
+        
+    
+        
+    }
+
+    .chain-section{
+        padding: 1px solid red;
+        
+        
+    }
+    .vendor-box{
+   
+        height: 150px;
+    }
+    .vendor-box img{
+        width:120px;
+        height: 150px;
+        flex:0 0 auto;
+        gap:5px;
+        margin-right: 5px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .btn-section{
+        display: flex;
+        width:80%;
+        justify-content: flex-end;
+        gap:5px;
+        margin-bottom:10px;
+       
+    }
+    .btn-section button{
+        padding:4px 15px;
+    }
+    .firm-section{
+        display: grid;
+        grid-template-columns: repeat(2,180px);
+        gap:5px;
+        height:150px;
+        margin-bottom:20px;
+        border-top:2px solid black;
+       }
+       .firm-image img{
+        width:100%;
+        height:150px;
+        object-fit: cover;
+        border-radius: 5px;
+        flex:0 0 auto;
+       
+    }
+    .firm-details ul li{
+        list-style-type: none;
+        font-size: 10px;
+        font-weight: 300;
+        
+    }
+    .firm-offer{
+    
+        position: relative;
+       top:-50px;
+       font-size: 12px;
+        font-weight: 900;
+        color:white;
+        background-color:transparent;
+        margin:0 10px;
+        border-radius: 10px;
+        text-align: center;
+        text-shadow: 1px 1px  black,-1px -2px  black,-2px -2px black;
+        
+       
+    }
+    .product-image button{
+        position: absolute;
+        bottom:10px;
+        right:10px;
+        left:10px;
+        text-align: center;
+        
+     padding:2px 20px;
+     border-radius: 10px;    
+     cursor: pointer;
+    }
+    .btn-section button{
+        padding:2px 15px;
+    }
+    .product-total{
+        margin-top:25px;
+        margin:5px 10px;
+        background-color: rgba(209, 221, 217, 0.262);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.377);
+        font-size: 12px;
+    }
+    .product-section{
+        display: flex;
+        justify-content: space-between;
+        margin:5px 20px;
+        padding:0 100px;
+        border-top:2px solid black;
+       
+        align-items: center;
+    }
+    
+
+
+ }
